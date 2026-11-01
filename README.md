@@ -149,3 +149,7 @@ Weights and engine source. Both come from upstream:
 ## What this is not
 
 A snapshot of one working setup, not a supported distribution. Pinned commits and dated numbers. If upstream has moved, expect to fix things.
+
+## License
+
+MIT. See [LICENSE](LICENSE). The engine source and weights stay under their own licenses.
