@@ -6,7 +6,7 @@ Both work. One generates faster. The other reads long prompts faster. Pick per j
 
 Tested 2026-10-31 on:
 
-- RX 7900 XT (gfx1100, 20 GB), i7-10700, 91 GiB RAM, PCIe Gen3 x16
+- RX 7900 XT (gfx1100, 20 GB), i7-10700, 96 GiB RAM, PCIe Gen3 x16
 - Ubuntu 26.04
 - Model: Qwen3.8-Flash-Next, Swift-1.5 GSQ-RCO IQ3_S weights, 78 GB on disk
 - Context: 262144 tokens on both engines
