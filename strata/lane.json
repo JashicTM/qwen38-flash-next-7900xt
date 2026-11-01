@@ -1,0 +1,62 @@
+{
+  "exe": "<HOME>/src/strata/engine/strata",
+  "args": [
+    "--pack",
+    "<HOME>/src/Strata-data/packs/swift-gsq-iq3_s",
+    "--native",
+    "<HOME>/src/Strata-data/models/swift-gsq-iq3_s/Swift-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "--ple-gguf",
+    "<HOME>/src/Strata-data/models/swift-gsq-iq3_s/Swift-Qwen3.8-Flash-Next-GSQ-RCO-IQ3_S-00001-of-00002.gguf",
+    "--expert-profile",
+    "<HOME>/src/strata/data/expert-profile.bin",
+    "--expert-cache",
+    "auto",
+    "--prefill",
+    "auto:32768",
+    "--spec",
+    "4",
+    "--spec-min-p",
+    "0.5",
+    "--mtp",
+    "<HOME>/src/Strata-data/mtp/rt",
+    "--max-context",
+    "262144",
+    "--kv",
+    "int8",
+    "--kv-resident",
+    "32768",
+    "--conversation-cache-mib",
+    "16384",
+    "--conversation-cache-slots",
+    "8"
+  ],
+  "cwd": "<HOME>/src/strata",
+  "tokenizer": "<HOME>/src/Strata-data/packs/swift-gsq-iq3_s/tokenizer",
+  "model_name": "swift-qwen3.8-flash-next-gsq-iq3_s",
+  "log": "<HOME>/src/strata/strata-swift-gsq-iq3_s.log",
+  "lib_dirs": [
+    "<HOME>/src/strata/.venv/lib/python3.14/site-packages/_rocm_sdk_devel/lib",
+    "<HOME>/src/strata/.venv/lib/python3.14/site-packages/_rocm_sdk_libraries_gfx110X_dgpu/lib"
+  ],
+  "port": 8080,
+  "gpu": 0,
+  "gpus_asked": true,
+  "host": "127.0.0.1",
+  "open_browser": false,
+  "backend": "hip",
+  "env": {
+    "STRATA_HIPBLASLT_TUNING": "<HOME>/src/strata/tools/hip/gfx1100-hipblaslt-100200.txt",
+    "STRATA_HIP_WMMA": "1",
+    "STRATA_PF_FUSED": "1"
+  },
+  "parallel": 1,
+  "reasoning_effort": "high",
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 0.0,
+    "repetition_penalty": 1.0
+  }
+}
